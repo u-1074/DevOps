@@ -10,16 +10,16 @@ jobs:
   print_name:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{env.NAME}}"
+      - run: echo "${{ vars.NAME }}"
 
   print_surname:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$SURNAME"
+      - run: echo "${{ vars.SURNAME }}"
 
   print_email:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$EMAIL"
+      - run: echo "${{ vars.EMAIL }}"
 
       
