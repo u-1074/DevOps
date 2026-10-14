@@ -1,0 +1,10 @@
+name: branching
+on: 
+  push:
+    branches:
+    - "**"
+jobs:
+  print_name:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$GITHUB_REF"
