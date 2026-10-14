@@ -1,0 +1,16 @@
+name: Website deployment on github pages
+
+on: [push]
+
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+   steps:
+    - name: Syntaxe verification
+      uses: actions/checkout@v2	
+
+    - name: Deployment
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+       github_token: ${{ secrets.GITHUB_TOKEN }}
+       publish_dir: ./
