@@ -7,4 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - run: echo "Introduction to pipeline"
-  
+  print_name:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$NAME"
+
+  print_surname:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$SURNAME"
+
+  print_email:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$EMAIL"
