@@ -10,7 +10,7 @@ jobs:
   print_name:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$NAME"
+      - run: echo "${{env.NAME}}"
 
   print_surname:
     runs-on: ubuntu-latest
@@ -21,3 +21,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "$EMAIL"
+
+      
