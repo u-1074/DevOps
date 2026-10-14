@@ -5,10 +5,7 @@ jobs:
   launch_python:
     runs-on: ubuntu-latest
     steps:
-      - name: "setting up python"
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+
       - name: "printing_msg"
         run: |
           print("Commit successful.")
