@@ -1,5 +1,7 @@
 name: branching
-on: [push]
+on: 
+  push:
+    branches: [Dev, Val, Prod]
 jobs:
   print_name:
     runs-on: ubuntu-latest
