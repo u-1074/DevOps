@@ -1,0 +1,10 @@
+name: "CI/CD intro"
+
+on: [push]
+
+jobs:
+  print_msg:
+    runs-on: ubuntu-latest
+    steps:
+       - run: echo "Introduction to pipeline"
+  
