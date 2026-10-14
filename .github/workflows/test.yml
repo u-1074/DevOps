@@ -1,0 +1,7 @@
+name: test
+on: [push]
+jobs:
+  print_branch_name:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $GITHUB_REF
